@@ -1,0 +1,33 @@
+*{
+
+    margin:0;
+    padding:0;
+}
+body{
+
+    height: 100vh;
+    background: linear-gradient(to right bottom, #0F2027,#203A43,#2C5364);
+   align-items: center;
+    display: flex;
+    justify-content: center;
+}
+button{
+
+    padding: 10px 40px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(to right bottom,#6ebcd6,#096f9b,#10b5ec);
+
+}
+button:hover{
+
+    color: aliceblue;
+    background: linear-gradient(to right bottom,#5be8dc, #1c7398,#49e7bd);
+   /* border-radius: 1px 12px 1px 12px;*/
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}

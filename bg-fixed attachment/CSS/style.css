@@ -1,0 +1,36 @@
+body{
+
+    height: 100vh;
+    background: url('../img/bg.jpg') no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+p{
+    font-family: serif;
+    font-size: 15px;
+    color: aliceblue;
+    width: 500px;
+    font-family: sans-serif;
+
+}
+h1{
+
+    color: aqua;
+    text-align: center;
+    /* background-color: goldenrod; */
+    font-family: cursive;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.abc{
+
+    font-family: serif;
+    font-size: 15px;
+    color: aliceblue;
+    width: 500px;
+}
+
+p:hover{
+    color: #ccc;
+}

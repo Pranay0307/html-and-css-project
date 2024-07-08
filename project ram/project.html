@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      color: aliceblue;
+      font-family: sans-serif;
+    }
+    .card {
+      height: 400px;
+      width: 300px;
+      /* border: 1px solid #fff; */
+      overflow: hidden;
+
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      flex-direction: column;
+      background-color: orangered;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      /* background: #4af358; */
+      transition: all 0.5s ease;
+    }
+    .card:hover::before {
+      transform: translatex(-100%);
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background: url("img/18flag.jpg") no-repeat center / cover;
+      transition: all 0.5s ease;
+    }
+    .card:hover::after {
+      transform: translatex(100%);  
+    }
+    .btn {
+      margin-bottom: 10px;
+      border: none;
+      outline: none;
+      background: rgb(0, 64, 255);
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-weight: 700;
+      color: aliceblue;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: transparent;
+      border: 2px solid white;
+      font-style: italic;
+      box-shadow: 3px 0px 3px;
+    }
+  </style>
+  <body>
+    <div class="card">
+      <img
+        src="./img/jai-shree-ram-dp25-removebg-preview.png"
+        width="150px"
+        alt=""
+      />
+      <h1>Jai Shree Ram</h1>
+      <button class="btn">
+        <a href="./ayodha.html"> <span style="color: azure" list-style="none" text-decoration="none">Ayodha</span></a>
+      </button>
+    </div>
+  </body>
+</html>
